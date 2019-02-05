@@ -49,7 +49,14 @@ const config = {
             filename: "[name].css"
         }),
         new HtmlWebpackPlugin({
-            template: path.join(__dirname, "src", "index.html")
+            filename: "index.html",
+            template: path.join(__dirname, "src", "index.html"),
+            chunks: ['app'],
+        }),
+        new HtmlWebpackPlugin({
+            filename: "page.html",
+            template: path.join(__dirname, "src", "page.html"),
+            chunks: ['app'],
         }),
         new BrowserSyncPlugin({
             // browse to http://localhost:3000/ during development,
