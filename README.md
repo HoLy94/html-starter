@@ -1,1 +1,1 @@
-# html-starter
+My webpack starter pack with ES6 and Sass.
